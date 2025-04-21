@@ -2,14 +2,126 @@
 @use "color";
 @use "fonts";
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   height: 100vh;
   background-color: color.$cream;
 }
 
+.card-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 21.88rem;
+  border-radius: 0.5rem;
+  background: color.$white;
+}
+
+picture {
+  width: 100%;
+
+  img {
+    object-fit: contain;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+
+  .title-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+
+    .category {
+      @include fonts.preset-4(color.$grey);
+    }
+
+    .title {
+      @include fonts.preset-1(color.$black);
+    }
+
+    .description {
+      @include fonts.preset-3(color.$grey);
+    }
+  }
+
+
+  .price {
+    @include fonts.preset-1(color.$green-500);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5em;
+    width: 100%;
+
+    span {
+      @include fonts.preset-5(color.$green-500);
+      text-decoration: line-through;
+    }
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0.5rem;
+
+    @include fonts.preset-2(color.$white);
+    border-radius: 0.5rem;
+
+    width: 100%;
+    padding: 1rem 2rem;
+    background: color.$green-500;
+    transition: background 0.5s;
+    border: none;
+
+    &:hover {
+      background: color.$green-700;
+      cursor: url("../images/cursor-hand.svg") 10 0, pointer;
+      transition: background 0.5s;
+    }
+
+    &:focus {
+      background: color.$green-700;
+      transition: background 0.5s;
+      outline: none;
+    }
+  }
+}
+
+
+@media screen and (min-width: 48rem) {
+  body {
+    padding: 8em 0;
+
+  }
+
+  .card-component {
+    flex-direction: row;
+    max-width: 37.5rem;
+  }
+
+  .content {
+    max-width: 18.75rem;
+    gap: 2rem;
+  }
+
+  picture {
+    img {
+      border-radius: 0.5rem 0 0 0.5rem;
+    }
+  }
+}

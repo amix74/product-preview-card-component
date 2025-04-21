@@ -19,6 +19,7 @@
   font-size: 2rem;
   font-weight: 700;
   line-height: 1;
+  color: $color;
 }
 
 @mixin preset-2 ($color) {
@@ -26,6 +27,7 @@
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 1.1;
+  color: $color;
 }
 
 @mixin preset-3 ($color) {
@@ -33,6 +35,7 @@
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.6;
+  color: $color;
 }
 
 @mixin preset-4 ($color) {
@@ -41,6 +44,7 @@
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.42em;
+  color: $color;
 }
 
 @mixin preset-5 ($color) {
@@ -48,6 +52,7 @@
   font-size: 0.81rem;
   font-weight: 500;
   line-height: 1.2;
+  color: $color;
 }
 
 
