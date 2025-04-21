@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Fraunces';
+  src: url('../fonts/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin preset-1 ($color) {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+@mixin preset-2 ($color) {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+@mixin preset-3 ($color) {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+@mixin preset-4 ($color) {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.42em;
+}
+
+@mixin preset-5 ($color) {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.81rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+
