@@ -5,6 +5,10 @@
 body {
   height: 100vh;
   background-color: color.$cream;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-component {
@@ -104,10 +108,6 @@ picture {
 
 
 @media screen and (min-width: 48rem) {
-  body {
-    padding: 8em 0;
-
-  }
 
   .card-component {
     flex-direction: row;

@@ -70,6 +70,10 @@ h1, h2, h3, h4, h5, h6 {
 body {
   height: 100vh;
   background-color: #f2eae2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-component {
@@ -180,9 +184,6 @@ picture img {
 }
 
 @media screen and (min-width: 48rem) {
-  body {
-    padding: 8em 0;
-  }
   .card-component {
     flex-direction: row;
     max-width: 37.5rem;
